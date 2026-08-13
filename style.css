@@ -1,0 +1,216 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.2em;
+    color: #fff;
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #0615a0;
+    margin: 20px 0;
+    border-bottom: 2px solid #4a4aaf;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd57;
+}
+
+/* Section */
+section {
+    padding: 30px;
+    text-align: center;
+    min-height: 400px;
+}
+
+section p {
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    max-width: 600px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+li {
+    padding: 8px;
+}
+
+/* Faculty Cards */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2a3e50;
+    margin-bottom: 10px;
+}
+
+/* Courses Table */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: #4ca1af;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #eef1f5;
+}
+
+/* Contact Form */
+form {
+    background: #ffffff;
+    padding: 25px;
+    margin: 20px auto;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea,
+button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background: #1a237e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4ca1af;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
